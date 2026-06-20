@@ -1,0 +1,34 @@
+=== SUMMARY OF EXPERIMENTS ===
+
+| Tokenizer Approach | Vocab Size | Total Tokens | Compression Ratio | Final Loss | Training Time (s) |
+|--------------------|------------|--------------|-------------------|------------|-------------------|
+| Character-Level Custom         | 70         | 35602        | 1.0000            | 2.1961     | 13.43             |
+| SentencePiece BPE (Vocab=80)   | 80         | 25724        | 1.3840            | 2.5729     | 12.42             |
+| SentencePiece BPE (Vocab=300)  | 300        | 14938        | 2.3833            | 3.4128     | 12.95             |
+| SentencePiece Unigram (Vocab=200) | 200        | 18038        | 1.9737            | 3.2030     | 12.68             |
+
+
+=== GENERATION SAMPLES ===
+
+--- Character-Level Custom ---
+Generated text:
+in-wooon mensika senter cuhan sebakhcan.
+
+Bersamur barkokt matans terter senpej ternia ruadarn pe siasLi m
+----------------------------------------
+
+--- SentencePiece BPE (Vocab=80) ---
+Generated text:
+Jin-woo tenersega kepenangat keadah i magerolet mutulnin Iapa Selang pikan terlu min-ggera yang rekian nisipan yang menutan gegalnya tofpasit kesm
+----------------------------------------
+
+--- SentencePiece BPE (Vocab=300) ---
+Generated text:
+Sung Jin-woo sedinadolosikan telahealerdungnya bodia, pakhir Jin-woo menya, menengah kograsana kuil bateorgilik A, seensiasi Hunter melihadi bahkannya kembali menjadi ini luda duteri lama di ikah mereka jatan Sebenyakan laga pertarakutan Shid Perb
+----------------------------------------
+
+--- SentencePiece Unigram (Vocab=200) ---
+Generated text:
+Sung Jin-woo berhasil hembulius ke job monster inita ajaga, mampu dan mengangngtadah, ia pemuian yang melia olalukan Jin-woo sasis yang menampar biasa ketas pembusan yang dikasis tanbingatungkan. I" melinm, yang meng
+----------------------------------------
+
